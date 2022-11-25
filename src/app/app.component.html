@@ -1,7 +1,7 @@
 <h1>{{title}}</h1>
 
 <mat-form-field style="border-radius: 10px; background-color: aliceblue;">
-    <input matInput [(ngModel)]="selectedTime" name="selected_time_A" placeholder="hh:mm AM/PM" readonly />
+    <input matInput [(ngModel)]="selectedTime" name="selected_time_A" placeholder="Time" readonly />
     <mat-icon matSuffix (mousedown)="picker.open(); $event.preventDefault()">access_time</mat-icon>
 </mat-form-field>
 <ngx-mat-timepicker #picker (timeSet)="handleTimeSetEvent($event)"></ngx-mat-timepicker>
